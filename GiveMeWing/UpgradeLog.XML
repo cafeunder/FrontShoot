@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FrontShoot">
+</Property><Property Name="ソリューション ファイル" Value="C:\Users\cafe\Develop\front shoot 永久保存版\FrontShoot.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="C:\Users\cafe\Develop\front shoot 永久保存版\FrontShoot.suo">
+</Property><Property Name="Date" Value="2016年6月12日">
+</Property><Property Name="Time" Value="3:36">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="FrontShoot.sln" Description="ファイルは正常に C:\Users\cafe\Develop\front shoot 永久保存版\FrontShoot.sln.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="FrontShoot.suo" Description="ファイルは正常に C:\Users\cafe\Develop\front shoot 永久保存版\FrontShoot.suo.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="GameProg" Source="GameProg.vcproj" Description="Converting project file 'C:\Users\cafe\Develop\front shoot 永久保存版\GameProg.vcproj'.">
+</Event><Event ErrorLevel="1" Project="GameProg" Source="GameProg.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="GameProg" Source="GameProg.vcproj" Description="Done converting to new project file 'C:\Users\cafe\Develop\front shoot 永久保存版\GameProg.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="GameProg" Source="GameProg.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FrontShoot.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="FrontShoot.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\system">
+      <UniqueIdentifier>{3a757ade-bc52-4683-8d16-4c1d6d67857c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲーム管理">
+      <UniqueIdentifier>{26a6c6d2-6575-4021-89a1-488d1cc91461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲームモジュール">
+      <UniqueIdentifier>{92dbc68a-976b-4846-8c19-ef7e4791556b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲームモジュール\ショット">
+      <UniqueIdentifier>{5937b85e-a4c0-4340-9153-5d9fa7915af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲームモジュール\エネミー">
+      <UniqueIdentifier>{54de744d-aabf-49c2-b94e-99453894f6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲームモジュール\マイキャラ">
+      <UniqueIdentifier>{3662be32-80b9-495d-9f72-efb22f3e6a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\system">
+      <UniqueIdentifier>{4820a268-548b-436a-8833-b508d0407e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ゲームモジュール">
+      <UniqueIdentifier>{37badca3-9880-44ec-a693-b77108cc7038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ゲームモジュール\エネミー">
+      <UniqueIdentifier>{beeeed28-96df-4eaf-98e3-ce5c13a3c5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ゲームモジュール\ショット">
+      <UniqueIdentifier>{85e072fe-25d0-44f6-9cc0-3a012d4dd581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ゲームモジュール\マイキャラ">
+      <UniqueIdentifier>{3ebe8df6-193e-417c-b284-2ed3a3cb87fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ゲーム管理">
+      <UniqueIdentifier>{1ec8865b-187f-440c-9636-ada449c96a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="fps.cpp">
+      <Filter>ソース ファイル\system</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\system</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル\ゲーム管理</Filter>
+    </ClCompile>
+    <ClCompile Include="gameloop.cpp">
+      <Filter>ソース ファイル\ゲーム管理</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>ソース ファイル\ゲーム管理</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>ソース ファイル\ゲーム管理</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>ソース ファイル\ゲーム管理</Filter>
+    </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="boss.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="efect.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="operate.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="stage.cpp">
+      <Filter>ソース ファイル\ゲームモジュール</Filter>
+    </ClCompile>
+    <ClCompile Include="shot.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\ショット</Filter>
+    </ClCompile>
+    <ClCompile Include="sht_ope.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\ショット</Filter>
+    </ClCompile>
+    <ClCompile Include="ene_ope.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="mychar.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClCompile>
+    <ClCompile Include="myshot.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClCompile>
+    <ClCompile Include="satellite.cpp">
+      <Filter>ソース ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="fps.h">
+      <Filter>ヘッダー ファイル\system</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル\system</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="boss.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="database.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="efect.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="item.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="operate.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="stage.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール</Filter>
+    </ClInclude>
+    <ClInclude Include="ene_ope.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="shot.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\ショット</Filter>
+    </ClInclude>
+    <ClInclude Include="sht_ope.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\ショット</Filter>
+    </ClInclude>
+    <ClInclude Include="mychar.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClInclude>
+    <ClInclude Include="myshot.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClInclude>
+    <ClInclude Include="satellite.h">
+      <Filter>ヘッダー ファイル\ゲームモジュール\マイキャラ</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル\ゲーム管理</Filter>
+    </ClInclude>
+    <ClInclude Include="gameloop.h">
+      <Filter>ヘッダー ファイル\ゲーム管理</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>ヘッダー ファイル\ゲーム管理</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>ヘッダー ファイル\ゲーム管理</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

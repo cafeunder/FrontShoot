@@ -1,0 +1,2 @@
+【DXライブラリ使用許諾】
+DX Library Copyright (C) 2001-2016 Takumi Yamada.
