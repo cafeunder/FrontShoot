@@ -13,7 +13,6 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	SetOutApplicationLogValidFlag(FALSE);
 	ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen( DX_SCREEN_BACK ); //ウィンドウモード変更と初期化と裏画面設定   
 
-
 	font_db.LoadFontData();	//画像ファイルのロード
 	img_db.LoadImgData();
 	sound_db.LoadSoundData();
@@ -29,7 +28,6 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 		//　↓　処理本体をここに書く　↓
 
 		if(!game_start){
-			//if(CallKosen() == 1) game_start = TRUE;
 			game_start = TRUE;
 		}
 		
@@ -50,27 +48,6 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	DxLib_End();	//終了処理
 	return 0;
 }
-
-int CallKosen()
-{
-	static int count = 0;
-	static int handle = LoadGraph("DATA/img/kosen.png");
-	static int b_handle = LoadGraph("DATA/img/kosenback.png");
-	static int s_handle = LoadSoundMem("DATA/soundefect/bell02.ogg");
-
-	if(count == 30) PlaySoundMem(s_handle, DX_PLAYTYPE_BACK);
-	if(count < 30) SetDrawBlendMode(DX_BLENDMODE_ALPHA, (int)(((double)count/30)*255));
-	if(count > 230) SetDrawBlendMode(DX_BLENDMODE_ALPHA, 255-(int)(((double)(count-230)/30)*255));
-
-	DrawGraph(0, 0, b_handle, TRUE);
-	DrawGraph(0, 200, handle, TRUE);
-	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
-
-	count++;
-	if(count == 380) return 1;
-	return 0;
-}
-
 
 void _DrawBox(int x1, int y1, int x2, int y2, int Color, bool FillFlag)
 {

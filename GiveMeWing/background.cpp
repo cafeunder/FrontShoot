@@ -17,15 +17,17 @@ BackGround::BackGround(int fimg_index, int bimg_index, int f_velo, int b_velo)
 
 void BackGround::BackDraw(int count)
 {
-	//同じ画像を２つ重ねて描画
-	image.DrawImage(0,(count%(bimg_height/b_velocity))*b_velocity-bimg_height,backimg_index,FALSE,0);
-	image.DrawImage(0,(count%(bimg_height/b_velocity))*b_velocity,backimg_index,FALSE,0);
-	//スクロール速度にあわせてループ移動
+	if(bimg_height/b_velocity != 0){
+		image.DrawImage(0,(count%(bimg_height/b_velocity))*b_velocity-bimg_height,backimg_index,FALSE,0);
+		image.DrawImage(0,(count%(bimg_height/b_velocity))*b_velocity,backimg_index,FALSE,0);
+	}
 }
 
 void BackGround::FrontDraw(int count)
 {
-	image.DrawImage(0,(count%(fimg_height/f_velocity))*f_velocity-fimg_height,frontimg_index,TRUE,0);
-	image.DrawImage(0,(count%(fimg_height/f_velocity))*f_velocity,frontimg_index,TRUE,0);
+	if(fimg_height/f_velocity != 0){
+		image.DrawImage(0,(count%(fimg_height/f_velocity))*f_velocity-fimg_height,frontimg_index,TRUE,0);
+		image.DrawImage(0,(count%(fimg_height/f_velocity))*f_velocity,frontimg_index,TRUE,0);
+	}
 }
 

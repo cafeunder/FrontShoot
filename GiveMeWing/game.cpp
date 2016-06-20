@@ -325,10 +325,6 @@ void Game::MainDraw()
 		stage->Draw(mychar, count);	//ステージの描画
 		DrawScoreLife();
 	}
-
-#ifdef DEBUG_CODE
-	DrawFormatString(250,0,GetColor(255,255,255),"exp:%d",mychar->GetShotExp());
-#endif
 }
 
 
@@ -377,12 +373,6 @@ void Game::GameClear::Draw()
 	image.GetImageSize(IMG_STRGCLEAR, &img_w, &img_h);
 	int imgy_w, imgy_h;
 	image.GetImageSize(IMG_STRYOURS, &imgy_w, &imgy_h);
-
-	/*
-	if(count >= 200){
-		SetDrawBlendMode( DX_BLENDMODE_ALPHA, 255 - (int)((double)(count-200)/30*255));
-	}
-	*/
 
 	if(count < 30) {
 		SetDrawBlendMode( DX_BLENDMODE_ALPHA, (int)((double)count/30 * 255));

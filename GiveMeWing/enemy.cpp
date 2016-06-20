@@ -67,20 +67,6 @@ Enemy::Enemy(double a_x, double a_y, int a_enc,int a_sinterval,int s_index, int 
 	else interval_count = 0;
 }
 
-void PlayEnemyShotSound(int sht_type)
-{
-	/*
-	int se = SOUNDEFECT_SHOT;
-
-	switch(sht_type){
-	case SHOT_ENELASER:
-		se = SOUNDEFECT_ENELASER;break;
-	}
-
-	sound.PlaySoundHandle(se);
-	*/
-}
-
 #define FLASH_COUNT 2
 void Enemy::Update(ShotMgr* sht_mgr, MyCharacter* mychar, ItemMgr* item_mgr, int g_level)
 {
@@ -96,7 +82,6 @@ void Enemy::Update(ShotMgr* sht_mgr, MyCharacter* mychar, ItemMgr* item_mgr, int
 	//移動制御関数から発射許可が出ていて、
 	if((move_result == 1 && interval_count == 0) || move_result == 2) {
 		Shot(sht_mgr, mychar);
-		PlayEnemyShotSound(shot_index);
 	}
 	//インターバルでなければショット処理
 

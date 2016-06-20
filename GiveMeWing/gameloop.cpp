@@ -279,8 +279,7 @@ int GameLoop::Loop()
 		case 1 :	//ゲーム本体からの返答が1なら
 			g_stat = GAMELOOP_FINAL; break;	//ゲームオーバー状態へ
 		case 2 :	//ゲーム本体からの返答が2なら
-			g_stat = GAMELOOP_FINAL;
-			break;	//ゲームクリア状態へ
+			g_stat = GAMELOOP_GAMECLEAR; break;	//ゲームクリア状態へ
 		case 3 :
 			g_stat = GAMELOOP_FINAL; break;
 		case 0:
@@ -288,16 +287,16 @@ int GameLoop::Loop()
 		}
 		break;
 
-		/*
 	case GAMELOOP_GAMECLEAR :
+		delete game;	//ゲームオブジェクトを破棄
+		game = NULL;	//NULLを詰める
+		
+		m_result = -1;	//戻り値を-1と仮定
+		m_count = 0;	//カウンタを初期化
 
-		if(g_clear->Update() == 1){
-			delete g_clear;
-			g_clear = NULL;
-			g_stat = GAMELOOP_FINAL;
-		} else g_clear->Draw();
+		g_stat = GAMELOOP_CREDIT;
+		credit = new Credit();
 		break;
-		*/
 
 	case GAMELOOP_FINAL :
 		delete game;	//ゲームオブジェクトを破棄

@@ -131,7 +131,7 @@ ImgData_t ImgData[IMGDATA_NUM] =	//イメージデータ（実体）
 	{"DATA/img/titleback2.png",{-1,1}},
 	{"DATA/img/tobe.png",{-1,1}},
 	{"DATA/img/boss4.png",{-1,2}},
-	{"", {-1,1}}
+	{"DATA/img/null.png", {-1,1}}
 };
 
 ImgDataBase::ImgDataBase()
